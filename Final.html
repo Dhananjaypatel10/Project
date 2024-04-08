@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Station</title>
+<script>
+  function redirectToPage() {
+    var mode = document.getElementById("mode").value;
+    if (mode === "Former") {
+      window.location.href = "Second.html";
+    } else if (mode === "Citizen") {
+      window.location.href = "Citizen.html";
+    } else if (mode === "Research") {
+      window.location.href = "Research.html";
+    }
+  }
+</script>
+</head>
+<body>
+
+<h2>Select Mode For Weather Information</h2>
+
+<label for="mode">Choose Mode:</label>
+<select id="mode" name="mode">
+<option value="select">Select</option>
+  <option value="Former">Former</option>
+  <option value="Citizen">Citizen</option>
+  <option value="Research">Research</option>
+</select>
+
+<button onclick="redirectToPage()">Click</button>
+
+</body>
+</html>
